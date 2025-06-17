@@ -22,7 +22,7 @@ jobs:
       run: go install golang.org/x/tools/gopls@latest
     - name: Build
       run: |
-        go mod init https://github.com/AntonioVicenteStellaxius/building-and-testing-with-go/hello.go
+        go mod init github.com/AntonioVicenteStellaxius/building-and-testing-with-go
         go build -mod=mod
     - name: Test with the GO CLI
       run: go test
