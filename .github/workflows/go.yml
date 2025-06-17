@@ -22,7 +22,7 @@ jobs:
       run: go install golang.org/x/tools/gopls@latest
     - name: Build
       run: |
-        go mod init
+        go mod init example.com/m/v2
         go build -mod=mod
     - name: Test with the GO CLI
       run: go test
